@@ -1,0 +1,462 @@
+/* I chose a calming gray color scheme, making the colorful imagery the focus of the site and the academy seem more credible and dignified. */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  color: rgb(80,80,80);
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  padding-bottom: 1.2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: .20rem 0;
+}
+
+a h3 {
+  opacity: .7;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: .8rem;
+  line-height: 1.7;
+  padding: .20rem 0;
+  opacity: .7;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: .7rem;
+  padding: 2rem 0 1rem 0;
+  opacity: .8;
+}
+
+li a {
+  padding: 0 .5rem;
+}
+
+li a i {
+  opacity: .5;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  flex: 2 1 423px;
+}
+
+.bkdkgray {
+  background-color: rgba(80,80,80,.2);
+}
+
+.bkmdgray {
+  background-color: rgba(80,80,80,.1);
+}
+
+.bkltgray {
+  background-color: whitesmoke;
+}
+
+/* Navigation */
+
+.navi {
+  height: 64px;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  flex: 1;
+  padding-left: 1.5rem;
+}
+
+#logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+#black {
+  font-weight: 400;
+}
+
+#gray {
+  font-weight: 200;
+  opacity: .4;
+}
+
+#desktop {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  opacity: .7;
+  font-size: .9rem;
+}
+
+#desktop > li:hover,
+#logo > a:hover {
+  opacity: .6;
+}
+
+
+/* This is for desktop and laptop */
+@media only screen and (min-width: 769px) {
+  #mobile {
+    display: none;
+  }
+}
+
+/* This is for tablet and mobile */
+@media only screen and (max-width: 768px) {
+  #logo,
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    align-items: center;
+    font-size: .9rem;
+    justify-content: space-around;
+  }
+
+  #mobile > li:hover {
+    opacity: .5;
+  }
+}
+
+/* Learn Banner */
+#learn {
+  padding-top: 4rem;
+}
+
+#left img,
+#practice-left img {
+  width: 100%;
+}
+
+#learn-text {
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: rgb(80,80,80);
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  padding: .8rem 0;
+  decoration: none;
+}
+
+button:hover {
+  background-color: rgba(80,80,80,.7);
+  transition: all .5s ease-in-out;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+/* This is for desktop and laptop*/
+@media only screen and (min-width: 850px) {
+  #left,
+  #practice-left,
+  #video-left {
+    width: 60%;
+    margin: 2rem 1.5rem;
+    text-align: left;
+  }
+
+  button {
+    width: 90%;
+  }
+}
+
+
+/* This is for tablet and mobile */
+@media only screen and (max-width: 849px) {
+  #learn {
+    display: block;
+  }
+
+  #left {
+    height: 180px;
+    overflow: hidden;
+  }
+
+  #learn-text {
+    margin-top: 2rem;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: rgb(80,80,80);
+  }
+}
+
+/* Practice Banner */
+
+#readme1 {
+  padding-top: 1rem;
+  border-left: .5px solid rgba(80,80,80,.2);
+}
+
+#brule {
+  border-bottom: 1px solid rgba(80,80,80,.2);
+}
+
+.desktop-image {
+  height: 148px;
+  padding: 1rem;
+}
+
+.info {
+  justify-content: center;
+  padding: 0 1.5rem 0 .5rem;
+  text-align: left;
+}
+
+ .blue {
+  font-weight: 200;
+  font-size: .8rem;
+  color: cornflowerblue;
+  padding-top: 1rem;
+}
+
+.blue:hover {
+  opacity: .6;
+  transition: all .5s ease-in-out;
+}
+
+/* This is for desktop and laptop */
+@media only screen and (min-width: 850px) {
+  .mobile-info {
+    display: none;
+  }
+}
+
+/* This is for tablet and mobile */
+@media only screen and (max-width: 849px) {
+  #practice-left,
+  .desktop-image {
+    display: none;
+  }
+
+  .flex-column {
+    flex: 1;
+  }
+
+  .info {
+    padding: 1rem 1rem .5rem 1rem;
+  }
+
+  #brule {
+    border-bottom: 1px solid rgba(80,80,80,0);
+  }
+
+  .mobile-info ~ h3,
+  .mobile-info ~ h4,
+  .mobile-info ~ a.blue {
+    padding-left: 1rem;
+  }
+
+  .mobile-info ~ h3 {
+    padding-top: 1rem;
+  }
+
+  #readme1 {
+    padding: 0 0 2rem 0;
+  }
+
+  .mobile-info {
+    width: 100%;
+  }
+
+  .read.bkdkgray {
+    background-color: rgba(80,80,80,0);
+  }
+}
+
+/* Start Banner */
+
+.centerhead {
+  text-align: center;
+  padding: .5rem 0 2rem 0;
+}
+
+.rows {
+  justify-content: center;
+}
+
+.row {
+  padding: .75rem;
+}
+
+.row img {
+  width: 100%;
+}
+
+.row-text {
+  padding: 1rem;
+  background-color: white;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* This is for desktop and laptop */
+@media only screen and (min-width: 850px) {
+  .row {
+    width: 25%;
+  }
+
+  .row-text > a:hover {
+    color: rgba(80,80,80,.7);
+  }
+}
+
+/* This is for tablet and mobile */
+@media only screen and (max-width: 849px) {
+  .centerhead {
+    border-top: 1px solid rgba(80,80,80,.2);
+    background-color: rgba(80,80,80,0);
+  }
+
+  .rows {
+    display: block;
+  }
+
+  .row img,
+  .row-text > h4 {
+    display: none;
+  }
+
+  .row {
+    padding: 0;
+    margin: .5rem 1rem .5rem 1rem;
+  }
+
+  .row-text {
+    background-color: rgba(80,80,80,.2);
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .row-text:hover {
+    background-color: rgba(80,80,80,.4);
+    transition: all .5s ease-in-out;
+  }
+}
+/* Thesis Banner */
+
+#minus {
+  padding-bottom: 0;
+}
+
+#minus > h2 {
+  padding-bottom: .5rem;
+}
+
+#readme2 {
+  padding-top: 2rem;
+}
+
+video ~ h3 {
+  padding: 1.5rem 0 .5rem 0;
+}
+
+.info > a:hover {
+  color: rgba(80,80,80,.7);
+}
+
+/* This is for desktop and laptop */
+@media only screen and (min-width: 850px) {
+
+}
+
+/* This is for tablet and mobile */
+@media only screen and (max-width: 849px) {
+  #readme2 {
+    display: none;
+  }
+
+  #minus > h2 {
+    padding-bottom: 2rem;
+  }
+
+  video ~ h3,
+  video ~ h4 {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid rgba(80,80,80,.2);
+  padding: .5rem 0 2.5rem 0;
+}
+
+#foot-left {
+  flex: 1;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+#foot-right {
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
+#foot-right > li:hover {
+  opacity: .5;
+}
+
+/* This is for tablet and mobile */
+@media only screen and (max-width: 768px) {
+  footer {
+    border-top: 1px solid rgba(80,80,80,0);
+    padding: 0;
+  }
+
+  #foot-left {
+    padding: 2.5rem 0 1rem 1.5rem;
+  }
+
+  #foot-right {
+    display: none;
+  }
+}
